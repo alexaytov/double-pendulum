@@ -24,7 +24,7 @@ let damping = 0.999;
 let trace = [];
 
 function setup() {
-  createCanvas(600, 600);
+  createCanvas(windowWidth, windowHeight);
 }
 
 function draw() {
@@ -84,4 +84,8 @@ function draw() {
 
   a1 += a1Vel;
   a2 += a2Vel;
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
